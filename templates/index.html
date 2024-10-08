@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield Forecasting</title>
+</head>
+<body>
+    <h1>Crop Yield Forecasting</h1>
+    <form action="/predict" method="post">
+        <label for="crop_type">Select Crop:</label>
+        <select name="crop_type" id="crop_type">
+            <option value="Wheat">Wheat</option>
+            <option value="Paddy">Paddy</option>
+            <option value="Maize">Maize</option>
+        </select>
+        <br>
+        <label for="model_type">Select Model:</label>
+        <select name="model_type" id="model_type">
+            <option value="ARIMA">ARIMA</option>
+            <option value="SARIMAX">SARIMAX</option>
+            <option value="LSTM">LSTM</option>
+        </select>
+        <br>
+        <button type="submit">Predict Yield</button>
+    </form>
+</body>
+</html>
